@@ -57,4 +57,3 @@ location().then(function(response){
 .catch(function(resquest){
     console.log(resquest)
 })
-za

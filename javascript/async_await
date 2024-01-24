@@ -1,0 +1,72 @@
+
+/*//simple example
+async function asaw(){
+    var promise=new Promise(
+        function(response){
+        setTimeout(function(){
+          response("Example")
+
+        },500)
+}
+    )
+    console.log(await promise)
+}
+asaw()
+*/
+function posted(u){
+    var v="Yes"
+    if (v===u){
+        return true
+    }
+    else{
+        return false
+    }
+}
+async function Comment(){
+    return new Promise(
+        function (comresponse){
+            setTimeout(function(){
+                comresponse("First comment")
+            },500)
+        }
+
+    )
+
+}
+async function like(){
+    return new Promise(
+        function (likeresponse){
+            setTimeout(function(){
+                likeresponse("First comment")
+            },500)
+        }
+
+    )
+}
+async function post(){
+    var post=new Promise(
+        function(postresponse,err){
+            setTimeout(function(){
+                if(posted){
+                    postresponse("First ever post")
+                }
+                else{
+                    err("Not post")
+                }
+                
+            },1000)
+        }
+    )
+    var [feed,comment,Like]=await Promise.all([post,Comment(),like()])
+console.log(feed)
+console.log(comment)
+console.log(Like)
+    
+}
+post().then(function(response){
+    console.log(response)
+}
+)
+.catch(function(err){
+    console.log(err)
+})
