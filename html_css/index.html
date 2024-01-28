@@ -12,7 +12,7 @@
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
        }
        table{
-        background: linear-gradient(to bottom, #accb24,#f7a8f4); /* Gradient background */
+        background: linear-gradient(to bottom, #0f1201,#b2bb4e); /* Gradient background */
         text-emphasis-color: rgb(42, 163, 42);
        }
        pre{
@@ -26,12 +26,60 @@
         margin-left: 20px;
         margin-right: 980px;
        }
+       
+    
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: blue;
+}
+.item{
+    background-color: red;
+    color: black;
+    border: 1px solid rgb(12, 1, 1);
+}
+@media (max-width: 475px) {
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width: 800px) {
+    .main{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+   
+    
+}
+.felx-main{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #0f1201,#b2bb4e); /* Gradient background */
+
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+@media (max-width:475px) {
+    .f1-item{
+    
+        flex-direction:column-reverse;
+}}
+
+@media (min-width: 800px) {
+    .flex-main{
+        flex-direction: column;
+    }
+
+}
     </style>
 </head>
 <body>
+   
     <center><h1><b><i>JI CHANG WOOK
 
-    </i</h1></b></center>
+    </i></h1></b></center>
     <p>Ji Chang-wook is a South Korean actor and singer.He rose to fame for playing the lead role of Dong-hae in daily drama series Smile Again (2010–2011), and has had notable lead roles in television series such as Warrior Baek Dong-soo (2011), Empress Ki (2013–2014), Healer (2014–2015), The K2 (2016), Suspicious Partner (2017), Melting Me Softly (2019), Backstreet Rookie (2020), Lovestruck in the City (2020-2021), The Sound of Magic (2022), If You Wish Upon Me (2022),The Worst of Evil (2023) and Welcome to Samdal-ri (2023-2024).
     </p><br>
     <img src= "JI-CHANG-WOOK1.jpg" alt="image" title="Ji Chang Wook" width="600" height="450" style="float: left;">
@@ -159,6 +207,45 @@
     </form>
 </fieldset>
 
+<br><br><br>
+<div class="main">
+    <div class="item"></div>
+    <div class="item">02</div>
+    <div class="item">03</div>
+    <div class="item">04</div>
+    <div class="item">05</div>
+    <div class="item">06</div>
+    <div class="item">06</div>
+    <div class="item">06</div>
+    <div class="item">06</div>
+    <div class="item">06</div>
+    <div class="item">06</div>
+    <div class="item">06</div>
+    <div class="item">06</div>
 
+</div>
+<br><br>
+<h2><center>
+    <i>
+        SERIES
+    </i>
+</center>
+    </h2>
+<div class="felx-main">
+    <div class="f-item"><img src="m-11.jpg" alt=""></div>
+    <div class="f-item"><img src="m-2.jpg" alt=""></div>
+    <div class="f-item"><img src="m-3.jpg" alt=""></div>
+    <div class="f-item"><img src="m-4.jpg" alt=""></div>
+    <div class="f-item"><img src="m-5.jpg" alt=""></div>
+    <div class="f-item"><img src="m-6.jpg" alt=""></div>
+</div>
+<div class="felx1-main">
+    <div class="f1-item"><img src="m-7.jpg" alt=""></div>
+    <div class="f1-item"><img src="m-8.jpg" alt=""></div>
+    <div class="f1-item"><img src="m-9.jpg" alt=""></div>
+    <div class="f1-item"><img src="m-10.jpg" alt=""></div>
+    <div class="f1-item"><img src="m-12.jpg" alt=""></div>
+    <div class="f1-item"><img src="m-13.jpg" alt=""></div>
+</div>
 </body>
 </html>

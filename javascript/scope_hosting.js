@@ -76,7 +76,7 @@ let a=10
 kongu(5,10)
 function kongu(a,b)  {
     console.log(a+b)
-}jjj
+}
 
 
 

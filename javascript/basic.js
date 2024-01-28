@@ -15,7 +15,7 @@
 
 
 
-/*console.log("you")
+console.log("you")
 //variables
 a='a'
 console.log("General declaration of variable",a);
@@ -49,10 +49,10 @@ console.log("Arithmetic operator Decrement output",--bA)
 console.log("Arithmetic operator Increment output",aA++)
 
 //logical operator-> &&,||,!
- var aL=10
+ var aL=0
  var bL=10
  console.log("logical operator AND output",aL&&bL)
- consolg("logical operator || output",aL||bL)
+ console.log("logical operator || output",aL||bL)
  console.log("logical operator ! output",!aL)
  console.log(10&&20)
  console.log(10&&30)
@@ -72,11 +72,11 @@ console.log("Arithmetic operator Increment output",aA++)
  console.log("Relational operator < is:",ar<br)
  console.log("Relational operator <= is:",ar<=br)
  console.log("Relational operator === is:",ar===br)
- console.log("Relational operator !== is:",ar!==br)e.lo
+ console.log("Relational operator !== is:",ar!==br)
  
 
  
-//control statement -->for ,while,do..while
+//control statement -->for ,while,do...while
 // conditional statement-->if else
 
 //Object
@@ -96,7 +96,7 @@ console.log(customerdetails)
 var customerdetails={}
 customerdetails["id"]="21ECR040"
 customerdetails["Name"]="Lala"
-customerdetails["age"]="30"kk
+customerdetails["age"]="30"
 customerdetails["phone"]="1234567891"
 console.log(customerdetails)
 
@@ -116,6 +116,8 @@ for(var i=0;i<10;i++){
 
 }
 console.log(sum)
+
+
 //while
  var sum=0
  var i=0
@@ -133,6 +135,8 @@ do{
     i++
 }while(i<3)
 console.log(sum);
+
+
 //Example 1
 arr=[10,20,30]
 console.log(arr.length)
@@ -161,6 +165,8 @@ arr=[10,"T","F",true]
 for (const i in arr) {
    console.log(i)
    console.log(arr[i])
+   //{0:10}
+   //1=T
     }
 
 
@@ -170,13 +176,17 @@ arr=[10,"T","F",true]
 for (const element of arr) {
    console.log(element)
     }
+    //function Jik (int a){
+
+    //}
+    //const red =()=>{}
 
 //for each
 arr=[10,"T","F",true]
 arr.forEach(value => {
     console.log(value)
 });
-*/
+
 
 //example ES6
 var customerdetails={}

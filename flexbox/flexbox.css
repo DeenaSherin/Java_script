@@ -1,0 +1,26 @@
+
+    
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: blue;
+}
+.item{
+    background-color: red;
+    color: black;
+    border: 1px solid rgb(12, 1, 1);
+}
+@media (max-width: 475px) {
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width: 800px) {
+    .main{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    
+}

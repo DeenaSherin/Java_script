@@ -1,0 +1,18 @@
+create a folder
+git init
+git config user.name ""
+git config user.email ""
+git config --list   //List the username and email and blah blah
+Create a file in it
+git status    //test.txt
+
+git add filename
+
+
+git status    //new file : test.txt
+
+git commit    // Window will get open 
+                    i==Insert mode
+                    esc
+                    :wq
+
